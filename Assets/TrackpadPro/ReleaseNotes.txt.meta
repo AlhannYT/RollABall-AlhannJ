@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4487f4bf435994861b7c642f4bae98f3
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220952
+  packageName: TrackpadPro - Advanced SceneView controls
+  packageVersion: 1.0.0
+  assetPath: Assets/TrackpadPro/ReleaseNotes.txt
+  uploadId: 496484
