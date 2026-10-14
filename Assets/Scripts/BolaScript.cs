@@ -1,18 +1,19 @@
-using System.Collections; // Necesario para IEnumerator
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 using UnityEngine.UI;
+using TMPro;
 
 public class BolaScript : MonoBehaviour
 {
     public float velocidad = 7f;
     private Rigidbody rb;
 
-    [Header("UI - TextMeshPro")]
-    public TextMeshProUGUI textoCantidad;
-    public TextMeshProUGUI textoGanar;
-    public TextMeshProUGUI textoTimer;
+    [Header("UI - Textos")]
+    [Header("UI - Textos")]
+    public Text textoCantidad;
+    public Text textoGanar;
+    public Text textoTimer;
 
     [Header("Configuración")]
     public int totalColeccionables = 18;
@@ -70,7 +71,7 @@ public class BolaScript : MonoBehaviour
         {
             other.gameObject.SetActive(false);
 
-            contador = contador +1;
+            contador++;
             ActualizarTextoContador();
 
             if (contador >= totalColeccionables)
@@ -78,7 +79,7 @@ public class BolaScript : MonoBehaviour
                 Victoria();
             }
         }
-    } 
+    }
 
     void ActualizarTextoContador()
     {
@@ -106,13 +107,12 @@ public class BolaScript : MonoBehaviour
 
     void DetenerFisicas()
     {
-        // En Unity 6 se usa linearVelocity; en versiones previas se usa velocity
-        #if UNITY_6000_0_OR_NEWER
-                rb.linearVelocity = Vector3.zero;
-        #else
-                rb.velocity = Vector3.zero;
-        #endif
-                rb.angularVelocity = Vector3.zero;
+#if UNITY_6000_0_OR_NEWER
+        rb.linearVelocity = Vector3.zero;
+#else
+        rb.velocity = Vector3.zero;
+#endif
+        rb.angularVelocity = Vector3.zero;
     }
 
     IEnumerator VolverAlMenuTrasEspera()

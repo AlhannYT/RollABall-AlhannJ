@@ -8,8 +8,29 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/RollABallEscena.unity
     guid: 8fd7576a3ce97634c88dbaafbd6b0bcd
+  - enabled: 1
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: f3fe2ee89735c4240a29f8cb74529399
+  - enabled: 1
+    path: Assets/Scenes/Opciones.unity
+    guid: 01f7f0c63c0f05a4caf8de105b52445f
+  - enabled: 1
+    path: Assets/Scenes/Juego.unity
+    guid: f99eeca0afeda164ba8e4dec3f44fa68
+  - enabled: 1
+    path: Assets/Scenes/JuegoNivel2.unity
+    guid: 056b1d015b3d83848b35303c00334733
+  - enabled: 1
+    path: Assets/Scenes/JuegoNivel3.unity
+    guid: 4e95fb926b9c39b4393af407287c87ae
+  - enabled: 1
+    path: Assets/Scenes/JuegoNivel4.unity
+    guid: 3766f0d78acbca84f9036f2eff5e5194
+  - enabled: 1
+    path: Assets/Scenes/JuegoNivel5.unity
+    guid: fa449daf399b6ea46a888647d2c2132c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
